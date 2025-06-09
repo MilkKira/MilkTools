@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Label tabindex="-1" text="目标的子元素。&#10;包含 SkinnedMesh 渲染器的显示状态。&#10;按照当前场景的视角和位置生成图标图像。" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" />
+    <uie:ObjectField label="Target" name="MainObj" />
+    <ui:Button text="Generate" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RunButton" />
+    <ui:IntegerField label="IconSize (px)" value="256" name="iconSize" />
+    <ui:Toggle label="如果父元素除 “目标 ”外都处于非活动状态&#10;则不会显示其子元素。&#10;" name="ActiveObjToggle" value="true" style="height: 50px;" />
+    <ui:Label tabindex="-1" text="#网格渲染器可以将显示位置设置为世界原点。" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" />
+</ui:UXML>
